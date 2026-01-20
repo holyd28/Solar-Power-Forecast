@@ -85,7 +85,8 @@ class SolarForecaster:
         # drop nas created when shifting
         data = data.dropna()
         
-        features = ["hour_sin", "hour_cos", "month_sin", "month_cos", "ambient_temperature", "module_temperature", "irradiation", "efficiency proxy", "lag_1", "rolling_mean_4", "irradiance_std"]
+        features = ["hour_sin", "hour_cos", "month_sin", "month_cos", "ambient_temperature", 
+                    "module_temperature", "irradiation", "efficiency proxy", "lag_1", "rolling_mean_4", "irradiance_std"]
         target = "dc_power" 
         
         return data[features], data[target], data
