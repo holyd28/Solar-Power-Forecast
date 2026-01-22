@@ -41,7 +41,7 @@ def main():
     r2 = r2_score(y_test, y_pred)
     mae = mean_absolute_error(y_test, y_pred)
     print("\n" + "-"*30)
-    print(f"R² Score: {r2:.4f}")
+    print(f"R2 Score: {r2:.4f}")
     print(f"Mean Absolute Error: {mae:.4f} kW")
     print("-"*30 + "\n")
     
